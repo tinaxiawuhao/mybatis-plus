@@ -24,11 +24,11 @@ public class CodeGenerator {
         GlobalConfig gc = new GlobalConfig();
         String projectPath = System.getProperty("user.dir");
         gc.setOutputDir(projectPath + "/src/main/java");
-        gc.setAuthor("zwq");
+        gc.setAuthor("wh");
         gc.setOpen(false); //生成后是否打开资源管理器
         gc.setFileOverride(true); //重新生成时文件是否覆盖
         gc.setServiceName("%sService"); //去掉Service接口的首字母I
-        gc.setIdType(IdType.ID_WORKER_STR); //主键策略
+        gc.setIdType(IdType.ID_WORKER); //主键策略
         gc.setDateType(DateType.ONLY_DATE);//定义生成的实体类中日期类型
         gc.setSwagger2(true);//开启Swagger2模式
 
