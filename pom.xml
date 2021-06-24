@@ -65,6 +65,27 @@
             <artifactId>velocity-engine-core</artifactId>
             <version>2.3</version>
         </dependency>
+        <dependency>
+            <groupId>com.cosmoplat.opencosmo</groupId>
+            <artifactId>opencosmo-common</artifactId>
+            <version>1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.3</version>
+        </dependency>
+        <dependency><!-- for bpm-client -->
+            <groupId>commons-httpclient</groupId>
+            <artifactId>commons-httpclient</artifactId>
+            <version>3.1</version>
+        </dependency>
+        <!-- 格式化对象，方便输出日志 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.70</version>
+        </dependency>
     </dependencies>
 
     <build>
