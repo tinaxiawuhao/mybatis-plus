@@ -47,6 +47,7 @@ public class CodeGenerator {
         PackageConfig pc = new PackageConfig();
         pc.setModuleName(null); //模块名
         pc.setParent("com.haier.biz");
+//        pc.setParent("com.example.security");
         pc.setController("controller");
         pc.setEntity("entity");
         pc.setService("service");

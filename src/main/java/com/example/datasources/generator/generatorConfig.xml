@@ -13,7 +13,7 @@
             <property name="suppressAllComments" value="true"/>
         </commentGenerator>
         <!--数据库链接 URL，用户名、密码 -->
-        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/dtp_yunlang"
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver" connectionURL="jdbc:mysql://localhost:3306/scheduled"
                         userId="root" password="123456">
         </jdbcConnection>
         <javaTypeResolver>
@@ -36,7 +36,10 @@
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
         <!-- 要生成的表 tableName 是数据库中的表名或视图名 domainObjectName 是实体类名-->
-        <table tableName="model" domainObjectName="Model" enableCountByExample="false"
+<!--        <table tableName="instance" domainObjectName="Instance" enableCountByExample="false"-->
+<!--               enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"-->
+<!--               selectByExampleQueryId="false"></table>-->
+            <table tableName="scheduled" domainObjectName="Scheduled" enableCountByExample="false"
                enableUpdateByExample="false" enableDeleteByExample="false" enableSelectByExample="false"
                selectByExampleQueryId="false"></table>
     </context>
